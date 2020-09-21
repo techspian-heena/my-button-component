@@ -1,0 +1,110 @@
+@import './button-map.scss';
+
+.button-container {
+    min-width: 80px;
+    height: $button-height-size-medium;
+    border-radius: 4px;
+
+    font-family: var(--primary-font-family);
+    font-size: 1.6rem;
+    color: var(--button-primary-font-color);
+    font-weight: var(--button-font-weight-semibold);
+    background-color: var(--button-primary-background-color);
+
+    position: relative;
+    overflow: hidden;
+    border: none;
+    width: $button-max-width-extra-small;
+   
+    &[button-size='large-btn'] {
+        height: $button-height-size-large;
+    }
+
+    &[button-size='small-btn'] {
+        min-width: 48px;
+        height: $button-height-size-small;
+        font-size: 1.2rem;
+    }
+
+    &[disabled-button= true] {
+        height: $button-height-size-large;
+        background-color: var(--disabled-text);
+    }
+
+    &[button-type='secondary-btn'] {
+        background-color: var(--button-secondary-background-color);
+        color: var(--button-secondary-font-color);
+    }
+
+    &[button-type='tertiary-btn'] {
+        background-color: var(--button-secondary-font-color);
+        color: var(--button-secondary-background-color);
+        border: 2px solid var(--button-secondary-background-color);
+
+    }
+
+    &[button-type='floating-btn'] {
+        max-width: $button-max-width-extra-small;
+        height: $button-height-size-large;
+        border-radius: 2px;
+        color: var(--secondary);
+        background-color: var(--neutral);
+        box-shadow: 0 8px 12px 3px rgba(0,0,0,0.16)
+    }
+}
+
+.tertiary-disabled {
+    min-width: 48px;
+    height: $button-height-size-small;
+    border-radius: 4px;
+    border: 2px solid var(--disabled-text);
+    font-family: var(--primary-font-family);
+    font-size: 1.6rem;
+    color: var(--disabled-text);
+    background-color: var(--button-secondary-font-color);
+    font-weight: var(--button-font-weight-semibold);
+
+    position: relative;
+    overflow: hidden;
+    width: $button-max-width-extra-small;
+}
+
+.link-container {
+    width: $button-width-link;
+    font-family: var(--primary-font-family);
+    font-size: $button-font-size-link-large;
+    color: var(--secondary);
+    font-weight: var(--button-font-weight-semibold);
+
+    &[button-size='small-btn'] {
+        font-size: $button-font-size-link-small;
+    }
+}
+
+.link-container:hover {
+    height: 36px;
+}
+
+i {
+  color: var(--secondary);
+
+  &[button-size='icon-btn-type1'] {
+    font-size: 32px !important;
+} 
+
+  &[button-size='icon-btn-type2'] {
+    font-size: 24px !important;
+} 
+
+  &[button-size='icon-btn-type3'] {
+    font-size: 20px !important;
+} 
+
+  &[button-size='icon-btn-type4'] {
+    font-size: 16px !important;
+} 
+
+&[disabled-button= true] {
+    color: var(--disabled-text);
+}
+}

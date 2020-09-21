@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes" />
+
+  <title>Orxe3 Components</title>
+
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://components.qa.cnxloyalty.com/theme/css/imports.css"
+  />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/2.3.0/custom-elements-es5-adapter.js"></script>
+
+</head>
+
+<body>
+  <style>
+   .button-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: rgb(238, 232, 232);
+    width: 80%;
+    padding: 10px;
+    margin: 15px;
+   }
+
+   .container {
+     margin: 10px;
+   }
+
+   .floating-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: rgb(238, 232, 232);
+    width: 60%;
+    height: 70px;
+    padding: 15px;
+   }
+
+  </style>
+
+  <div class="button-container">
+    <div class="container">
+    <h1>Large</h1>
+    <orxe-btn button-size='large-btn' button-label='Primary Button' a11y-label='primary button large'></orxe-btn>
+    </div>
+    <div class="container">
+      <h1>Medium</h1>
+      <orxe-btn button-label='Primary Button' a11y-label='primary button mediuam'></orxe-btn>
+    </div>
+    <div class="container">
+      <h1>Small</h1>
+      <orxe-btn button-size='small-btn' button-label='Primary' a11y-label='primary button small'></orxe-btn>
+    </div>
+    <div class="container">
+      <h1>Disabled</h1>
+      <orxe-btn disabled-button button-label='Primary' a11y-label='primary button disabled'></orxe-btn>
+    </div>
+  </div>
+
+  <div class="button-container">
+    <div class="container">
+    <h1>Large</h1>
+    <orxe-btn button-size='large-btn' button-type='secondary-btn' button-label='Secondary Button' a11y-label='secondary button large'></orxe-btn>
+    </div>
+    <div class="container">
+      <h1>Medium</h1>
+      <orxe-btn button-type='secondary-btn' button-label='Secondary Button' a11y-label='secondary button mediuam'></orxe-btn>
+    </div>
+    <div class="container">
+      <h1>Small</h1>
+      <orxe-btn button-size='small-btn' button-type='secondary-btn' button-label='Secondary' a11y-label='secondary button small'></orxe-btn>
+    </div>
+    <div class="container">
+      <h1>Disabled</h1>
+      <orxe-btn disabled-button button-label='Secondary' a11y-label='secondary button disabled'></orxe-btn>
+    </div>
+  </div>
+
+  <div class="button-container">
+    <div class="container">
+      <h1>Large</h1>
+      <orxe-btn button-size='large-btn' button-type='tertiary-btn' button-label='Tertiary Button' a11y-label='tertiary button large'></orxe-btn>
+    </div>
+    <div class="container">
+      <h1>Medium</h1>
+      <orxe-btn button-type='tertiary-btn' button-label='Tertiary Button' a11y-label='tertiary button mediuam'></orxe-btn>
+    </div>
+    <div class="container">
+      <h1>Small</h1>
+      <orxe-btn button-size='small-btn' button-type='tertiary-btn' button-label='Tertiary' a11y-label='tertiary button small'></orxe-btn>
+    </div>
+    <div class="container">
+      <h1>Disabled</h1>
+      <orxe-btn button-type='tertiary-btn' disabled-button button-label='Tertiary' a11y-label='tertiary button disabled'></orxe-btn>
+    </div>
+  </div>
+
+  <div class="floating-container">
+    <orxe-btn button-type="floating-btn" button-label='Label 1' a11y-label="label1"></orxe-btn>
+    <orxe-btn button-type="floating-btn" button-label='Label 2' a11y-label="label2"></orxe-btn>
+  </div>
+
+  <div class="button-container">
+  <div class="container">
+    <h1>Large</h1>
+    <orxe-btn button-type="link-btn" button-label='Link Button'></orxe-btn>
+  </div>
+  <div class="container">
+    <h1>Small</h1>
+    <orxe-btn button-type="link-btn" button-size="small-btn" button-label='Link Button'></orxe-btn>
+  </div>
+  </div>
+
+  <div class="button-container">
+  <orxe-btn button-type="icon" icon-type="trash" button-size="icon-btn-type1"></orxe-btn>
+  <orxe-btn button-type="icon" icon-type="trash" button-size="icon-btn-type2"></orxe-btn>
+  <orxe-btn button-type="icon" icon-type="trash" button-size="icon-btn-type3"></orxe-btn>
+  <orxe-btn button-type="icon" icon-type="trash" button-size="icon-btn-type4"></orxe-btn>
+  <orxe-btn button-type="icon" icon-type="trash" button-size="icon-btn-type1" disabled-button></orxe-btn>
+  </div>
+
+</body>
+
+</html>
